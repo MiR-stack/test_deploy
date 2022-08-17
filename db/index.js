@@ -1,10 +1,13 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://localhost:27017/test",{
-    useUnifiedTopology: true,
-    serverSelectionTimeoutMS: 1000,
-  })
+  .connect(
+    "mongodb+srv://habib:1234@cluster0.hobpfic.mongodb.net/?retryWrites=true&w=majority",
+    {
+      useUnifiedTopology: true,
+      serverSelectionTimeoutMS: 1000,
+    }
+  )
   .then(() => {
     console.log("database connect succesfully");
   })
