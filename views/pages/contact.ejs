@@ -10,5 +10,11 @@
     <%- include('../components/navbar.ejs') %>
 
     <h3>this is contact page</h3>
+    <form action="/auth/registration" method="post">
+      <input type="text" name="name" placeholder="Enter your name" />
+      <input type="text" name="email" placeholder="Enter your email" />
+      <input type="text" name="password" placeholder="Enter your password" />
+      <button type="submit">submit</button>
+    </form>
   </body>
 </html>
