@@ -6,7 +6,7 @@
     "nodemon": "^2.0.19"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "name": "heroku",
   "version": "1.0.0",
