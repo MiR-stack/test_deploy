@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 mongoose
   .connect(
-    "mongodb+srv://habib:1234@cluster0.hobpfic.mongodb.net/?retryWrites=true&w=majority",
+    process.env.MONGODB || 'mongodb://localhost:27017/test',
     {
       useUnifiedTopology: true,
       serverSelectionTimeoutMS: 1000,
